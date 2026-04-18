@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antigravity Core Stabilization</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="crt-overlay"></div>
+    
+    <div id="game-container">
+        <!-- Header: Stats -->
+        <header id="stats-header">
+            <div class="stat">WPM: <span id="wpm">0</span></div>
+            <div class="stat">ACCURACY: <span id="accuracy">100</span>%</div>
+            <div class="stat">LEVEL: <span id="level">FLICKER</span></div>
+        </header>
+
+        <!-- Main game area -->
+        <main id="terminal-area">
+            <div id="words-container"></div>
+            <!-- Core indicator -->
+            <div id="core-container">
+                <div id="core-label">ANTIGRAVITY CORE</div>
+                <div id="core-bar-bg">
+                    <div id="core-bar-fill"></div>
+                </div>
+                <div id="core-status">GRAVITY: <span id="gravity-score">100</span>%</div>
+            </div>
+            <!-- Input visualizer -->
+            <div id="typing-feedback"></div>
+        </main>
+        
+        <!-- Screens -->
+        <div id="start-screen" class="screen">
+            <h1>STATION CRITICAL</h1>
+            <p>The Antigravity Core is failing. Stabilize it by typing emergency commands.</p>
+            <p>If you miss, the crew floats away.</p>
+            <button id="start-btn">INITIALIZE SYSTEM</button>
+        </div>
+
+        <div id="game-over-screen" class="screen hidden">
+            <h1 class="danger-text">SYSTEM FAILURE</h1>
+            <p>GRAVITY LOST. CREW ADRIFT.</p>
+            <p>Final WPM: <span id="final-wpm">0</span></p>
+            <p>Accuracy: <span id="final-accuracy">0</span>%</p>
+            <button id="restart-btn">REBOOT SYSTEM</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antigravity Core Stabilization</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="crt-overlay"></div>
+    
+    <div id="game-container">
+        <!-- Header: Stats -->
+        <header id="stats-header">
+            <div class="stat">WPM: <span id="wpm">0</span></div>
+            <div class="stat">ACCURACY: <span id="accuracy">100</span>%</div>
+            <div class="stat">LEVEL: <span id="level">FLICKER</span></div>
+        </header>
+
+        <!-- Main game area -->
+        <main id="terminal-area">
+            <div id="words-container"></div>
+            <!-- Core indicator -->
+            <div id="core-container">
+                <div id="core-label">ANTIGRAVITY CORE</div>
+                <div id="core-bar-bg">
+                    <div id="core-bar-fill"></div>
+                </div>
+                <div id="core-status">GRAVITY: <span id="gravity-score">100</span>%</div>
+            </div>
+            <!-- Input visualizer -->
+            <div id="typing-feedback"></div>
+        </main>
+        
+        <!-- Screens -->
+        <div id="start-screen" class="screen">
+            <h1>STATION CRITICAL</h1>
+            <p>The Antigravity Core is failing. Stabilize it by typing emergency commands.</p>
+            <p>If you miss, the crew floats away.</p>
+            <button id="start-btn">INITIALIZE SYSTEM</button>
+        </div>
+
+        <div id="game-over-screen" class="screen hidden">
+            <h1 class="danger-text">SYSTEM FAILURE</h1>
+            <p>GRAVITY LOST. CREW ADRIFT.</p>
+            <p>Final WPM: <span id="final-wpm">0</span></p>
+            <p>Accuracy: <span id="final-accuracy">0</span>%</p>
+            <button id="restart-btn">REBOOT SYSTEM</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
